@@ -1,8 +1,145 @@
 {% extends 'djgui/base.html' %}
+{%  load static %}
 
 {% block content %}
-    <div class="embed-container" style="top: -220px; z-index: -1">
+    <div class="embed-container" style="top: -220px; z-index: -100; background-color: black; opacity: .8;">
         <iframe src="https://player.vimeo.com/video/222309738?autoplay=1&loop=1" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-
+    <div class="embed-container hidden-sm hidden-xs" style="margin-top: -52%; margin-bottom: -20%; z-index: -10;">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <h2 class="text-center" style="color: white;">
+                    <strong>HEAVY CROWN MEDIA SPECIALIZES IN VIDEO STORYTELLING, COMMERCIALS, AND SPECIAL EVENT PHOTOGRAPHY.</strong>
+                </h2>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <h2 class="text-center" style="color: white;">
+                    <button class="btn btn-default btn-lg" style="padding: 15px 40px;"><strong>LET'S TALK!</strong></button>
+                </h2>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding: 0 120px;">
+        <div class="row no-gutters" style="margin-top: -100px;">
+            <div class="col-md-4">
+                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
+            </div>
+            <div class="col-md-4">
+                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
+            </div>
+            <div class="col-md-4">
+                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
+            </div>
+            <div class="col-md-4">
+                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
+            </div>
+            <div class="col-md-4">
+                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
+            </div>
+            <div class="col-md-4">
+                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="height: 420px; background-color: rgba(155, 129, 88, 1); padding-top: 20px;">
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="padding: 0 50px;">
+            <h1 class="text-center" style="color: black; font-size: 3em;">"Your life is your life. Know it while you have it. You are marvelous"</h1>
+            <br>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+        <br>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="{% static 'djgui/img/heavy-crown-logo-small-black.png' %}">
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container" style="padding: 0 120px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <img style="width: 100%;" src="{% static 'djgui/img/contact-banner.webp' %}">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-unstyled list-inline">
+                    <li><i id="social_link_facebook" class="fa fa-facebook fa-lg" aria-hidden="true" style="cursor: pointer;"></i></li>
+                    <li><i id="social_link_twitter"  class="fa fa-twitter fa-lg" aria-hidden="true" style="cursor: pointer;"></i></li>
+                    <li><i id="social_link_linkedin"  class="fa fa-linkedin fa-lg" aria-hidden="true" style="cursor: pointer;"></i></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="hc-contact-fields" placeholder="Name">
+            </div>
+            <div class="col-md-6">
+                <input class="hc-contact-fields" placeholder="Email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input class="hc-contact-fields" placeholder="Subject">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input class="hc-contact-fields" placeholder="Phone">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input class="hc-contact-fields" placeholder="Address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea rows="5" class="hc-contact-fields" placeholder="Message"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="#" style="color: black; text-decoration: none;">Send</a>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
