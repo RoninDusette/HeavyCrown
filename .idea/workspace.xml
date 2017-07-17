@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11f18fac-e332-4056-bf08-6fb831484629" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/img/20031542_499941933675606_509841225080267655_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/img/contact-banner.webp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/img/heavy-crown-logo-small-black.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/css/main.css" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/js/main.js" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base.html" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base_footer.html" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base_footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base_header.html" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base_header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/home.html" afterPath="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/home.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +27,7 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="1410">
               <caret line="94" column="40" lean-forward="false" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
               <folding>
                 <element signature="e#105#178#0#HTML" expanded="true" />
@@ -69,12 +60,11 @@
       <file leaf-file-name="base_footer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base_footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="85" lean-forward="false" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+            <state relative-caret-position="60">
+              <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -114,8 +104,8 @@
         <option value="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/js/main.js" />
         <option value="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base.html" />
         <option value="$PROJECT_DIR$/HeavyCrown/apps/djgui/static/djgui/css/main.css" />
-        <option value="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base_footer.html" />
         <option value="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/home.html" />
+        <option value="$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base_footer.html" />
       </list>
     </option>
   </component>
@@ -710,12 +700,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/base_footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="85" lean-forward="false" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+        <state relative-caret-position="60">
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -723,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HeavyCrown/apps/djgui/templates/djgui/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
+        <state relative-caret-position="1410">
           <caret line="94" column="40" lean-forward="false" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
           <folding>
             <element signature="e#105#178#0#HTML" expanded="true" />
