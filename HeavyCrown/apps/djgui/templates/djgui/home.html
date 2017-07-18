@@ -3,7 +3,7 @@
 
 {% block content %}
     <div class="embed-container" style="top: -220px; z-index: -100; background-color: black; opacity: .8;">
-        <iframe src="https://player.vimeo.com/video/222309738?autoplay=1&loop=1" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="{% autoescape off %}{% for banner in banner_video %}{{ banner.url }}{% endfor %}{% endautoescape %}" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="embed-container hidden-sm hidden-xs" style="margin-top: -52%; margin-bottom: -20%; z-index: -10;">
         <div class="row">
@@ -53,9 +53,6 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>

@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'HeavyCrown.apps.djgui',
+    'HeavyCrown.apps.banner',
+    'HeavyCrown.apps.quote',
+    'HeavyCrown.apps.wattup',
+    'HeavyCrown.apps.portfolio',
 ]
 
 MIDDLEWARE = [
