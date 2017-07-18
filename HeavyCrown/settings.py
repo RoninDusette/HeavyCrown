@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'PIL',
+    'imagekit',
+    'versatileimagefield',
     'HeavyCrown.apps.djgui',
     'HeavyCrown.apps.banner',
     'HeavyCrown.apps.quote',
@@ -125,3 +128,6 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_temp')
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_temp')
+MEDIA_URL = '/media/'

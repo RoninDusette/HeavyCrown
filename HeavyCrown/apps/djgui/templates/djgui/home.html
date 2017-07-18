@@ -33,24 +33,11 @@
     </div>
     <div class="container" style="padding: 0 120px;">
         <div class="row no-gutters" style="margin-top: -100px;">
+            {% for photo in photos %}
             <div class="col-md-4">
-                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
+                <img style="max-width: 100%; height: auto; width: 100%;" src="{{ photo.photo.crop.400x400 }}">
             </div>
-            <div class="col-md-4">
-                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
-            </div>
-            <div class="col-md-4">
-                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
-            </div>
-            <div class="col-md-4">
-                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
-            </div>
-            <div class="col-md-4">
-                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
-            </div>
-            <div class="col-md-4">
-                <img style="max-width: 100%; height: auto; width: 100%;" src="{% static 'djgui/img/20031542_499941933675606_509841225080267655_n.jpg' %}">
-            </div>
+            {% endfor %}
         </div>
     </div>
     <br>
@@ -64,7 +51,7 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8" style="padding: 0 50px;">
-            <h1 class="text-center" style="color: black; font-size: 3em;">"Your life is your life. Know it while you have it. You are marvelous"</h1>
+            <h1 class="text-center" style="color: black; font-size: 3em;">"{% for quote in quotes %}{{ quote.quote }}{% endfor %}"</h1>
             <br>
         </div>
         <div class="col-md-2"></div>
