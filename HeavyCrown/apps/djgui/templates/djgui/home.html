@@ -35,7 +35,7 @@
         <div class="row no-gutters">
             {% for photo in photos %}
             <div class="col-md-4">
-                <img style="max-width: 100%; height: auto; width: 100%;" src="{{ photo.photo.crop.400x400 }}">
+                <img class="photo-thumb" style="max-width: 100%; height: auto; width: 100%; cursor: pointer;" src="{{ photo.photo.crop.400x400 }}">
             </div>
             {% endfor %}
         </div>

@@ -34,3 +34,11 @@ $(".contact-link").click(function() {
         scrollTop: $(".contact").offset().top
     }, 500);
 });
+
+$(".photo-thumb").hover(function() {
+    $(this).fadeTo('fast', 0.6);
+    },
+    function() {
+    $(this).fadeTo('fast', 1);
+    }
+);
