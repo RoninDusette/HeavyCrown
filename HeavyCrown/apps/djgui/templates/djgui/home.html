@@ -5,12 +5,12 @@
     <div class="embed-container" style="top: -220px; z-index: -100; background-color: black; opacity: .8;">
         <iframe src="{% autoescape off %}{% for banner in banner_video %}{{ banner.url }}{% endfor %}{% endautoescape %}" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-    <div class="embed-container hidden-sm hidden-xs" style="margin-top: -52%; margin-bottom: -20%; z-index: -10;">
+    <div class="embed-container hidden-sm hidden-xs" style="margin-top: -900px; margin-bottom: -20%; z-index: -10;">
         <div class="row">
             <div class="col-md-2">
             </div>
             <div class="col-md-8">
-                <h2 class="text-center" style="color: white;">
+                <h2 class="text-center" style="color: white; font-size: 3em;">
                     <strong>HEAVY CROWN MEDIA SPECIALIZES IN VIDEO STORYTELLING, COMMERCIALS, AND SPECIAL EVENT PHOTOGRAPHY.</strong>
                 </h2>
             </div>
@@ -24,15 +24,15 @@
             </div>
             <div class="col-md-8">
                 <h2 class="text-center" style="color: white;">
-                    <button class="btn btn-default btn-lg" style="padding: 15px 40px;"><strong>LET'S TALK!</strong></button>
+                    <button class="contact-link btn btn-default btn-lg" style="padding: 15px 40px; cursor: pointer; z-index: 1000;"><strong>LET'S TALK!</strong></button>
                 </h2>
             </div>
             <div class="col-md-2">
             </div>
         </div>
     </div>
-    <div class="container" style="padding: 0 120px;">
-        <div class="row no-gutters" style="margin-top: -100px;">
+    <div class="container work" style="padding: 0 70px;">
+        <div class="row no-gutters">
             {% for photo in photos %}
             <div class="col-md-4">
                 <img style="max-width: 100%; height: auto; width: 100%;" src="{{ photo.photo.crop.400x400 }}">
@@ -43,7 +43,7 @@
     <br>
     <br>
     <br>
-    <div style="height: 420px; background-color: rgba(155, 129, 88, 1); padding-top: 20px;">
+    <div style="height: 420px; background-color: rgba(155, 129, 88, 1); padding-top: 20px;" class="contact">
         <br>
         <br>
         <br>
@@ -51,7 +51,7 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8" style="padding: 0 50px;">
-            <h1 class="text-center" style="color: black; font-size: 3em;">"{% for quote in quotes %}{{ quote.quote }}{% endfor %}"</h1>
+            <h1 class="text-center" style="color: black; font-size: 3em;"><strong>"{% for quote in quotes %}{{ quote.quote }}{% endfor %}"</strong></h1>
             <br>
         </div>
         <div class="col-md-2"></div>
@@ -63,7 +63,6 @@
         </div>
     </div>
     </div>
-    <br>
     <br>
     <br>
     <div class="container" style="padding: 0 120px;">

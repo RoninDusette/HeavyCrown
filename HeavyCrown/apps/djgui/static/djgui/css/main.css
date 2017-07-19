@@ -10,12 +10,8 @@ body {
 }
 
 
-li, p {
+h1, li, p {
     font-family: 'Nunito', sans-serif;
-}
-
-h1 {
-    font-family: 'Playfair Display', serif;
 }
 
 input, textarea {
