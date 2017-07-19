@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'', include('HeavyCrown.apps.djgui.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^imagefit/', include('imagefit.urls')),
+    url(r'^photos/', include('HeavyCrown.apps.portfolio.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

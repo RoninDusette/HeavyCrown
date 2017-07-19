@@ -1,7 +1,65 @@
 {% extends 'djgui/base.html' %}
+{% load static %}
 
 {% block content %}
+<div class="home">
+    <nav class="navbar" style="max-width: 1440px; margin: 0 auto;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar" style="background-color: white;"></span>
+        <span class="icon-bar" style="background-color: white;"></span>
+        <span class="icon-bar" style="background-color: white;"></span>
+      </button>
+        <a href="/"><img class="img-responsive hidden-sm hidden-xs" alt="Brand" src="{% static 'djgui/img/heavy-crown-logo-black.png' %}" style="margin: 25px;"></a>
+        <a href="/"><img class="img-responsive hidden-md hidden-lg" alt="Brand" src="{% static 'djgui/img/heavy-crown-logo-black.png' %}" style="margin: 25px; max-width: 50%;"></a>
+    </div>
 
-    photo detail
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 5%; padding-right: 7%;">
+        <li style="margin: 0 15px; font-size: 2em; cursor: pointer;"><a href="/" style="text-decoration: none; color: black;">HOME</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+</div>
 
+    <br>
+    <br>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12 center-block">
+        <img src="/media/{{ photo.photo }}" class="img-responsive">
+    </div>
+</div>
+    <br>
+<div class="row">
+    <div class="col-md-9">
+        <h2>Photo by {{ photo.artist }}</h2>
+    </div>
+    <div class="col-md-3">
+        <div class="addthis_sharing_toolbox" style="margin-top: 15px; margin-left: 25px;"></div>
+    </div>
+</div>
+    <br>
+<div id="disqus_thread"></div>
+<script>
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://heavy-crown-media.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f519881ae0d403"></script>
 {% endblock content %}
