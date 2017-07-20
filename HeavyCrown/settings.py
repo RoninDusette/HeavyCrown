@@ -37,7 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'PIL',
+    'imagekit',
+    'versatileimagefield',
     'HeavyCrown.apps.djgui',
+    'HeavyCrown.apps.banner',
+    'HeavyCrown.apps.quote',
+    'HeavyCrown.apps.wattup',
+    'HeavyCrown.apps.portfolio',
 ]
 
 MIDDLEWARE = [
@@ -116,8 +123,24 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Email server settings
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'mail.dusette.net'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'contact@dusette.net'
+EMAIL_HOST_PASSWORD = 'PsBGwdai'
+DEFAULT_TO_EMAIL = ['contact@heavycrownmedia.com',]
+DEFAULT_FROM_EMAIL = 'contact@heavycrownmedia.com'
+ORG_NAME = 'Heavy Crown Media'
+
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_temp')
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_temp')
+MEDIA_URL = '/media/'
