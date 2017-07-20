@@ -32,8 +32,8 @@
       <file leaf-file-name="photo-detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HeavyCrown/apps/portfolio/templates/portfolio/photo-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+            <state relative-caret-position="300">
+              <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
               <folding>
                 <element signature="e#2689#2716#0#HTML" expanded="true" />
               </folding>
@@ -896,8 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HeavyCrown/apps/portfolio/templates/portfolio/photo-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+        <state relative-caret-position="300">
+          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
           <folding>
             <element signature="e#2689#2716#0#HTML" expanded="true" />
           </folding>
