@@ -25,7 +25,7 @@ SECRET_KEY = '#c8d%h7i5x6jm=ra7-^vtg*l(1d)hi&npu4@pqgs0g3h0s6h7i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['heavycrownmedia.internal.dusette.net']
+ALLOWED_HOSTS = ['heavycrownmedia-dev.internal.dusette.net']
 
 
 # Application definition
@@ -88,7 +88,7 @@ DATABASES = {
         'NAME': 'heavycrown',
         'USER': 'heavycrownadmin',
         'PASSWORD': 'J00skry209!',
-        'HOST': 'mysql.heavycrownmedia.internal.dusette.net',
+        'HOST': 'mysql.heavycrownmedia-dev.internal.dusette.net',
         'PORT': '3306',
     }
 }

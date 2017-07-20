@@ -5,7 +5,7 @@
     {% include 'djgui/base_header.html' %}
 
     <div class="embed-container" style="top: -220px; z-index: -100; background-color: black; opacity: .8;">
-        <iframe src="{% autoescape off %}{% for banner in banner_video %}{{ banner.url }}{% endfor %}{% endautoescape %}" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/{% autoescape off %}{% for banner in banner_video %}{{ banner.video_code }}{% endfor %}{% endautoescape %}?autoplay=1&loop=1" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <div style="position: absolute; top: 25%; left: 0; right: 0;" class="hidden-sm hidden-xs">
         <div class="row">
             <div class="col-md-2">
@@ -79,7 +79,7 @@
         <br>
         <div class="row">
             <div class="col-md-12">
-                <img style="width: 100%;" src="{% static 'djgui/img/contact-banner.webp' %}">
+                <img style="width: 100%;" src="{% static 'djgui/img/contact-banner.png' %}">
             </div>
         </div>
         <br>
