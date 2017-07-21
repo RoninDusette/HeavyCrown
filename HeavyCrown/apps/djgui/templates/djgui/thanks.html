@@ -1,5 +1,28 @@
 {% extends 'djgui/base.html' %}
+{% load static %}
 
 {% block content %}
-Thanks!
+<div class="container">
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-12 text-center center-block">
+            <img class="img-responsive center-block" src="{% static 'djgui/img/heavy-crown-logo-black.png' %}">
+            <h1>Thank you for contacting us. We will get back to you soon!</h1>
+            <h2><em>Redirecting you back to the home page in 5 seconds...</em></h2>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.setTimeout(function() {
+    window.location.href = 'http://heavycrownmedia-dev.internal.dusette.net';
+}, 5000);
+</script>
 {% endblock content %}

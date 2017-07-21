@@ -35,6 +35,12 @@ $(".contact-link").click(function() {
     }, 500);
 });
 
+$(".contact-link-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".contact").offset().top
+    }, 500);
+});
+
 $(".photo-thumb").hover(function() {
     $(this).fadeTo('fast', 0.6);
     },

@@ -10,8 +10,8 @@ body {
 }
 
 
-h1, h2 li, p {
-    font-family: 'Nunito', sans-serif;
+h1, h2, li, p {
+    font-family: 'Lato', sans-serif;
 }
 
 input, textarea {

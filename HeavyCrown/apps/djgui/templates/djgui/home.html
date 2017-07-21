@@ -4,36 +4,60 @@
 {% block content %}
     {% include 'djgui/base_header.html' %}
 
-    <div class="embed-container" style="top: -220px; z-index: -100; background-color: black; opacity: .8;">
+    <div class="embed-container hidden-sm hidden-xs" style="top: -220px; z-index: -100; background-color: black; opacity: .8;">
         <iframe src="https://player.vimeo.com/video/{% autoescape off %}{% for banner in banner_video %}{{ banner.video_code }}{% endfor %}{% endautoescape %}?autoplay=1&loop=1" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <div style="position: absolute; top: 25%; left: 0; right: 0;" class="hidden-sm hidden-xs">
-        <div class="row">
-            <div class="col-md-2">
+        <div style="position: absolute; top: 25%; left: 30px; right: 0;" class="hidden-sm hidden-xs">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-center" style="color: white; font-size: 3em;">
+                        <strong>HEAVY CROWN MEDIA SPECIALIZES IN VIDEO STORYTELLING, COMMERCIALS, EVENT PHOTOGRAPHY, BRANDING, AND WEB DESIGN.</strong>
+                    </h2>
+                </div>
+                <div class="col-md-2">
+                </div>
             </div>
-            <div class="col-md-8">
-                <h2 class="text-center" style="color: white; font-size: 3em;">
-                    <strong>HEAVY CROWN MEDIA SPECIALIZES IN VIDEO STORYTELLING, COMMERCIALS, EVENT PHOTOGRAPHY, BRANDING, AND WEB DESIGN.</strong>
-                </h2>
-            </div>
-            <div class="col-md-2">
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-8">
-                <h2 class="text-center" style="color: white;">
-                    <button class="btn btn-default btn-lg" style="padding: 15px 40px; cursor: pointer; z-index: 1000;"><strong class="contact-link">LET'S TALK!</strong></button>
-                </h2>
-            </div>
-            <div class="col-md-2">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-center" style="color: white;">
+                        <a class="btn btn-default btn-lg contact-link-btn" style="padding: 15px 40px; cursor: pointer; z-index: 1000;"><strong>LET'S TALK!</strong></a>
+                    </h2>
+                </div>
+                <div class="col-md-2">
+                </div>
             </div>
         </div>
     </div>
+    <div class="embed-container hidden-md hidden-lg hidden-xl" style="top: -60px; z-index: -100; background-color: black; opacity: .8;">
+        <iframe src="https://player.vimeo.com/video/{% autoescape off %}{% for banner in banner_video %}{{ banner.video_code }}{% endfor %}{% endautoescape %}?autoplay=1&loop=1" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div style="position: absolute; top: 35%; left: 0; right: 0;" class="hidden-md hidden-lg hidden-xl">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-center" style="color: white;">
+                        <a class="btn btn-default btn-lg contact-link-btn" style="padding: 15px 60px; cursor: pointer;"><strong>LET'S TALK!</strong></a>
+                    </h2>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container work" style="padding: 0 70px; margin-top: -135px;">
+        <div class="row hidden-md hidden-lg hidden-xl">
+            <div class="col-md-12">
+                <h3 class="text-center" style="margin-top: 110px; line-height: 35px;">
+                    HEAVY CROWN MEDIA SPECIALIZES IN VIDEO STORYTELLING, COMMERCIALS, EVENT PHOTOGRAPHY, BRANDING, AND WEB DESIGN.
+                </h3>
+            </div>
+        </div>
+        <br>
         <div class="row no-gutters">
             {% for photo in photos %}
             <div class="col-md-4">
@@ -47,29 +71,110 @@
     <br>
     <br>
     <br>
-    <div style="height: 420px; background-color: rgba(155, 129, 88, 1); padding-top: 20px;">
+    <div class="hidden-sm hidden-xs" style="height: 420px; background-color: rgba(155, 129, 88, 1); padding-top: 20px;">
         <br>
         <br>
         <br>
         <br>
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8" style="padding: 0 50px;">
-            <h1 class="text-center" style="color: black; font-size: 3em;"><strong>"{% for quote in quotes %}{{ quote.quote }}{% endfor %}"</strong></h1>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="padding: 0 50px;">
+                <h1 class="text-center" style="color: black; font-size: 3em;"><strong>"{% for quote in quotes %}{{ quote.quote|upper }}{% endfor %}"</strong></h1>
+                <br>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
             <br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="{% static 'djgui/img/heavy-crown-logo-small-black.png' %}">
+            </div>
         </div>
-        <div class="col-md-2"></div>
     </div>
+    <div class="hidden-md hidden-lg hidden-xl" style="height: 420px; background-color: rgba(155, 129, 88, 1); padding-top: 20px;">
         <br>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <img src="{% static 'djgui/img/heavy-crown-logo-small-black.png' %}">
+        <br>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="padding: 0 50px;">
+                <h1 class="text-center" style="color: black;"><strong>"{% for quote in quotes %}{{ quote.quote|upper }}{% endfor %}"</strong></h1>
+                <br>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+            <br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="{% static 'djgui/img/heavy-crown-logo-small-black.png' %}">
+            </div>
         </div>
     </div>
+    <br>
+    <br>
+    <div class="container contact hidden-sm hidden-xs" style="padding: 0 120px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <img style="width: 100%;" src="{% static 'djgui/img/contact-banner.png' %}">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-unstyled list-inline">
+                    <li><i id="social_link_facebook" class="fa fa-facebook fa-lg" aria-hidden="true" style="cursor: pointer;"></i></li>
+                    <li><i id="social_link_twitter"  class="fa fa-twitter fa-lg" aria-hidden="true" style="cursor: pointer;"></i></li>
+                    <li><i id="social_link_linkedin"  class="fa fa-linkedin fa-lg" aria-hidden="true" style="cursor: pointer;"></i></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <div class="row">
+            <div class="col-md-6">
+                <input name="name" class="hc-contact-fields" placeholder="Name">
+            </div>
+            <div class="col-md-6">
+                <input name="sender" class="hc-contact-fields" placeholder="Email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input name="subject" class="hc-contact-fields" placeholder="Subject">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input name="phone" class="hc-contact-fields" placeholder="Phone" maxlength="10">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input name="address" class="hc-contact-fields" placeholder="Address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea name="message" rows="5" class="hc-contact-fields" placeholder="Message"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <input type="submit" value="Send" style="border: none; background-color: white;">
+            </div>
+        </div>
+        </form>
     </div>
-    <br>
-    <br>
-    <div class="container contact" style="padding: 0 120px;">
+    <div class="container contact-mobile hidden-md hidden-lg hidden-xl" style="padding: 0 60px;">
         <div class="row">
             <div class="col-md-12">
                 <h1>CONTACT</h1>
