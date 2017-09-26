@@ -29,16 +29,32 @@ $(".work-link").click(function() {
     }, 500);
 });
 
-$(".contact-link").click(function() {
+$(".work-link-2").click(function() {
+    $('html, body').animate({scrollTop: $('.work').offset().top + 20}, 10);
+});
+
+$(".contact-link-1").click(function() {
     $('html, body').animate({
-        scrollTop: $(".contact").offset().top
+        scrollTop: $(".contact-1").offset().top
     }, 500);
 });
 
-$(".contact-link-btn").click(function() {
+$(".contact-link-2").click(function() {
     $('html, body').animate({
-        scrollTop: $(".contact").offset().top
+        scrollTop: $(".contact-1").offset().top
     }, 500);
+});
+
+$(".contact-link-3").click(function() {
+    $('html, body').animate({scrollTop: $('.contact-2').offset().top + 20}, 10);
+});
+
+$(".contact-link-4").click(function() {
+    $('html, body').animate({scrollTop: $('.contact-2').offset().top + 20}, 10);
+});
+
+$(".lets-talk").click(function() {
+    $('html, body').animate({scrollTop: $('.contact-2').offset().top + 20}, 10);
 });
 
 $(".photo-thumb").hover(function() {

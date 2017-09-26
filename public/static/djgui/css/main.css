@@ -44,6 +44,12 @@ input, textarea {
     height: auto;
 }
 
+.androidFix {
+    overflow:hidden !important;
+    overflow-y:hidden !important;
+    overflow-x:hidden !important;
+}
+
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {

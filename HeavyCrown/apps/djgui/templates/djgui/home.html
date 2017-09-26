@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-8">
                     <h2 class="text-center" style="color: white;">
-                        <a class="btn btn-default btn-lg contact-link-btn" style="padding: 15px 40px; cursor: pointer; z-index: 1000;"><strong>LET'S TALK!</strong></a>
+                        <span><a class="btn btn-default btn-lg" style="padding: 15px 40px; cursor: pointer; z-index: 1000;"><strong>LET'S TALK!</strong></a></span>
                     </h2>
                 </div>
                 <div class="col-md-2">
@@ -33,28 +33,20 @@
             </div>
         </div>
     </div>
-    <div class="embed-container hidden-md hidden-lg hidden-xl" style="top: -60px; z-index: -100; background-color: black; opacity: .8;">
+    <div class="embed-container hidden-md hidden-lg hidden-xl" style="z-index: -100; background-color: black; opacity: .8;">
         <iframe src="https://player.vimeo.com/video/{% autoescape off %}{% for banner in banner_video %}{{ banner.video_code }}{% endfor %}{% endautoescape %}?autoplay=1&loop=1" width="1440" height="810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <div style="position: absolute; top: 35%; left: 0; right: 0;" class="hidden-md hidden-lg hidden-xl">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="text-center" style="color: white;">
-                        <a class="btn btn-default btn-lg contact-link-btn" style="padding: 15px 60px; cursor: pointer;"><strong>LET'S TALK!</strong></a>
-                    </h2>
-                </div>
-                <div class="col-md-2">
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="container work" style="padding: 0 70px; margin-top: -135px;">
+    <div class="container work" style="padding: 0 20px; margin-top: -80px;">
         <div class="row hidden-md hidden-lg hidden-xl">
             <div class="col-md-12">
-                <h3 class="text-center" style="margin-top: 110px; line-height: 35px;">
+                <h3 class="text-center" style="margin-top: 110px; line-height: 30px; font-size: 1.5em;">
                     HEAVY CROWN MEDIA SPECIALIZES IN VIDEO STORYTELLING, COMMERCIALS, EVENT PHOTOGRAPHY, BRANDING, AND WEB DESIGN.
                 </h3>
+            </div>
+        </div>
+        <div class="row hidden-md hidden-lg hidden-xl">
+            <div class="col-md-12 center-block text-center">
+                <a class="lets-talk btn btn-default btn-lg" style="padding: 15px 40px; margin: 20px 0;"><strong>LET'S TALK!</strong></a>
             </div>
         </div>
         <br>
@@ -97,7 +89,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8" style="padding: 0 50px;">
-                <h1 class="text-center" style="color: black;"><strong>"{% for quote in quotes %}{{ quote.quote|upper }}{% endfor %}"</strong></h1>
+                <h3 class="text-center" style="color: black; font-size: 1.5em;"><strong>"{% for quote in quotes %}{{ quote.quote|upper }}{% endfor %}"</strong></h3>
                 <br>
             </div>
             <div class="col-md-2"></div>
@@ -111,7 +103,7 @@
     </div>
     <br>
     <br>
-    <div class="container contact hidden-sm hidden-xs" style="padding: 0 120px;">
+    <div class="container contact-1 hidden-sm hidden-xs" style="padding: 0 120px;">
         <div class="row">
             <div class="col-md-12">
                 <h1>CONTACT</h1>
@@ -174,7 +166,7 @@
         </div>
         </form>
     </div>
-    <div class="container contact-mobile hidden-md hidden-lg hidden-xl" style="padding: 0 60px;">
+    <div class="container contact-2 hidden-md hidden-lg hidden-xl" style="padding: 0 60px;">
         <div class="row">
             <div class="col-md-12">
                 <h1>CONTACT</h1>

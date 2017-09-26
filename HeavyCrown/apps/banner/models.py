@@ -5,4 +5,4 @@ class BannerVideo(models.Model):
     video_code = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.url
+        return self.video_code
